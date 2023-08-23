@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Ferramenta &quot;Contador&quot;"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http//localhost:1234/contador.html"/>
+  <meta property="og:image" content="/icon.png"/>
+
+
+  <link rel="apple-touch-icon" href="icon.png"/>
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <div class="d-flex flex-column  min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./seletor.html">Seletor de Cor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contador.html">Contador</a>            </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cronometro.html">Cronômetro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./to-do-list.html">To-do-list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gerador-de-senha.html">Gerador de Senha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contagem.html">Contagem Regressiva</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <main class="p-2 flex-grow-1 text-center">
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Contador</h1>
+              <p class="col-md-8 mx-auto fs-4">Utilize os botões abaixo para registrar uma contagem.</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row d-lg-inline-flex flex-lg-nowrap justify-content-lg-center">
+            <button type="submit" id="botao-menos" class="order-2 order-lg-1 btn btn-danger bi-dash-circle-fill"> 1</button>
+            <button type="submit" id="botao-mais" class="order-1 order-lg-2 btn btn-success bi-plus-circle-fill"> 1</button>
+          </div>
+        </div>
+          <output id="output" class="d-block order-3 display-1 fw-bold py-5">
+            0
+          </output>
+      </main>
+    </div>
+    <footer class="bg-light p-2 text-dark text-opacity-50 text-center fst-italic bg-light">
+      Copyright &copy; 2023 Erick Alan de Lima
+    </footer>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/contador.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

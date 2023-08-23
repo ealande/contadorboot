@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ferramenta Cronômetro</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Ferramenta &quot;Cronômetro&quot;"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http//localhost:1234/cronometro.html"/>
+  <meta property="og:image" content="/icon.png"/>
+
+
+  <link rel="apple-touch-icon" href="icon.png"/>
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <div class="d-flex flex-column  min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./seletor.html">Seletor de Cor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="./contador.html">Contador</a>            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./cronometro.html">Cronômetro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./to-do-list.html">To-Do-List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gerador-de-senha.html">Gerador de Senha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contagem.html">Contagem Regressiva</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <main class="p-2 flex-grow-1 text-center">
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Cronômetro</h1>
+              <p class="col-md-8 mx-auto fs-4">
+                Utilize os botões abaixo para controlar o cronômetro.
+              </p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column d-sm-inline-block mx-sm-auto">
+          <button id="botao-iniciar" class="btn btn-success" type="button">
+            <i class="bi bi-play-circle-fill"></i>
+            Iniciar
+          </button>
+          <button id="botao-pausar" class="btn btn-warning" type="button">
+            <i class="bi bi-pause-circle-fill"></i>
+            Pausar
+          </button>
+          <button id="botao-reiniciar" class="btn btn-danger" type="button">
+            <i class="bi bi-stop-circle-fill"></i>
+            Reiniciar
+          </button>
+          <output class="d-block display-1 fw-bold py-5">
+            0
+          </output>
+        </div>
+
+        </div>
+      </main>
+    </div>
+    <footer class="bg-light p-2 text-dark text-opacity-50 text-center fst-italic bg-light">
+      Copyright &copy; 2023 Erick Alan de Lima
+    </footer>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="js/cronometro.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

@@ -9,8 +9,8 @@
   "license": "MIT",
   "author": "Erick Lima",
   "scripts": {
-    "build": "parcel build index.html",
-    "dev": "parcel index.html",
+    "build": "parcel build contador.html",
+    "dev": "parcel contador.html",
     "start:front": "npm run build && npm run dev",
     "start:back": "cd server && npm start",
     "start": "./node_modules/.bin/npm-run-all --parallel start:front start:back",
